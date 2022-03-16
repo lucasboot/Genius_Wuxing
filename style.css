@@ -1,0 +1,49 @@
+body{
+    margin: 0;
+    background-color: rgb(126, 123, 123);
+}
+.main-game{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.genius{
+    display: grid;
+    grid-template-areas: 'earth fire' 'wind water';
+    grid-gap: 10px;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 100%;
+    width: 700px;
+    height: 700px;
+}
+
+.water{
+    grid-area: water;
+    background-color: rgba(0, 174, 243, 0.61);
+    border-bottom-right-radius: 100%;
+}
+
+.fire {
+    grid-area: fire;
+    background-color: rgb(230, 62, 62);
+    border-top-right-radius: 100%;
+
+}
+.wind {
+    grid-area: wind;
+    background-color: rgb(228, 224, 17);
+    border-bottom-left-radius: 100%;
+}
+
+.earth {
+    grid-area: earth;
+    background-color: rgb(8, 248, 8);
+    border-top-left-radius: 100%;
+}
+.selected{
+    opacity: 0.4;
+}
